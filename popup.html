@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Blocker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .removeBtn {
+            margin-left: auto;
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            padding: 3px 6px;
+            cursor: pointer;
+        }
+        .removeBtn:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <h2>Set Time Limit for Site</h2>
+    <input type="text" id="timeLimitSiteInput" placeholder="Site (e.g., example.com)">
+    <input type="number" id="timeLimitInput" placeholder="Time limit (minutes)">
+    <button id="setTimeLimitBtn">Set Time Limit</button>
+
+    <h2>Time-Limited Sites</h2>
+    <ul id="timeLimitedSiteList"></ul>
+
+    <h2>Blocked Sites</h2>
+    <ul id="blockedSiteList"></ul>
+
+    <script src="popup.js"></script>
+</body>
+</html>
